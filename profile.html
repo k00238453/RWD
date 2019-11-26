@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> My Website </title>
+<head><meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="profile.css"/>
+    <script src="site.js"></script>
+</head>
+    
+    <header>
+        
+<div class="topnav" id="myTopnav">
+  <a href="site.html" class="active">Home</a>
+    
+<a href="news.html">News</a>
+
+    
+  <div class="dropdown">
+    <button class="dropbtn">Genres
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Fantasy</a>
+      <a href="#">Sci/Fi</a>
+      <a href="#">Crime</a>
+        <a href="#">Comics</a>
+        <a href="#">Romance</a>
+        <a href="#">Biography</a>
+    </div>
+  </div>
+    
+    <div class="dropdown">
+    <button class="dropbtn">Newsletters
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Issue #1</a>
+      <a href="#">Issue #2</a>
+      <a href="#">Issue #3</a>
+    </div>
+  </div>
+    
+    <div class="dropdown">
+    <button class="dropbtn">Videos
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Interviews</a>
+      <a href="#">Trailers</a>
+    </div>
+  </div>
+    
+<a href="profile.html">My Account</a>
+    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+        
+    </header>
+    <br>
+<body>
+<div id="container">
+    <h2>Your Profile</h2>
+   <table border = 1>
+        <tr>
+            <td><img src="profile.jpg" alt="placeholder"></td>
+            <td><p><strong>Name:</strong> Joe Bloggs</p>
+                <p><strong>Username:</strong> JBloggs</p>
+                <p><strong>Email Address:</strong> jbloggs@gmail.com</p>
+                <p><strong>Password:</strong> ********</p>
+                <p><strong>Date of Birth:</strong> 01/01/1980</p>
+            </td>
+            
+            <td> <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Profile Photo</span></p>
+                 <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Name</span></p>
+                 <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Username</span></p>
+                 <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Email Address</span></p>
+                 <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Password</span></p>
+                 <p><span style="color: #ff0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Date of Birth</span></p>
+            </td>
+        </tr>
+    </table>
+
+    <form action="action_page.php" method="post">
+  <div class="login">
+      <h2>Login</h2>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="password" style="background-color:#f1f1f1">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+    <form action="action_page.php" style="border:1px solid #ffffff">
+  <div class="signup">
+    <h2>Sign Up</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+    
+	<footer>
+<p>This website was created by Melanie Meehan,<br>
+        K00238453,<br>
+        IDM2,<br>
+        November 2019</p>
+</footer>
+</html>
+</div>
+</body>
+</html>
