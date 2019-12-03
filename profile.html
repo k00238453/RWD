@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<title> My Website </title>
+<title> BookNews </title>
 <head><meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="profile.css"/>
-    <script src="site.js"></script>
 </head>
     
     <header>
         
 <div class="topnav" id="myTopnav">
-  <a href="site.html" class="active">Home</a>
+  <a href="index.html" class="active">Home</a>
     
 <a href="news.html">News</a>
 
@@ -59,9 +58,9 @@
 <body>
 <div id="container">
     <h2>Your Profile</h2>
-   <table border = 1>
+   <table>
         <tr>
-            <td><img src="profile.jpg" alt="placeholder"></td>
+            <td><img src="img/profile.jpg" alt="placeholder"></td>
             <td><p><strong>Name:</strong> Joe Bloggs</p>
                 <p><strong>Username:</strong> JBloggs</p>
                 <p><strong>Email Address:</strong> jbloggs@gmail.com</p>
@@ -79,11 +78,11 @@
         </tr>
     </table>
 
-    <form action="action_page.php" method="post">
+    <form id="myForm" action="#" method="post" onsubmit="return validate()">
   <div class="login">
       <h2>Login</h2>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <p><label for="txtEmail">Email:</label>		
+		<input type="text" id="txtEmail" name="txtEmail" /></p>s
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
@@ -97,21 +96,23 @@
   <div class="password" style="background-color:#f1f1f1">
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
+</form>  
+    <script type="text/javascript"></script>  
 
-    <form action="action_page.php" style="border:1px solid #ffffff">
+    <form id="myForm" action="#" method="post" onsubmit="return validate()">
   <div class="signup">
     <h2>Sign Up</h2>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <p><label for="txtEmail">Email:</label>		
+    <input type="text" id="txtEmail" name="txtEmail" /></p>
+
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <label for="psw-repeat"><b>Confirm Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
     <label>
@@ -125,6 +126,8 @@
     </div>
   </div>
 </form>
+    <script type="text/javascript"></script>
+
     
 	<footer>
 <p>This website was created by Melanie Meehan,<br>
@@ -132,7 +135,7 @@
         IDM2,<br>
         November 2019</p>
 </footer>
-</html>
+    
 </div>
 </body>
 </html>
